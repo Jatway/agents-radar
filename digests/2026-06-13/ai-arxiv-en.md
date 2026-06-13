@@ -1,6 +1,6 @@
 # ArXiv AI Research Digest 2026-06-13
 
-> Source: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-06-13 00:32 UTC
+> Source: [ArXiv](https://arxiv.org/) (cs.AI, cs.CL, cs.LG) | 50 papers | Generated: 2026-06-13 07:10 UTC
 
 ---
 
@@ -8,97 +8,116 @@ Here is the structured ArXiv AI Research Digest for June 13, 2026.
 
 ---
 
-## ArXiv AI Research Digest — 2026-06-13
-
 ### 1. Today's Highlights
 
-Today's submissions signal a strong pivot toward **reasoning as a dynamical system**, with mathematical frameworks from operad theory being applied to detect and model compositional failures in LLMs. In agents, the field is moving beyond simple tool-calling and static benchmarks toward **recursive orchestration** (agents spawning sub-agents) and **memory evolution** for robustness in dynamic environments. A significant trend is the rise of **domain-specific agent benchmarks** (epigenomics, lab robotics, Indic-language medicine), indicating that evaluation is becoming more verifiable and specialized. Finally, several papers tackle the frontier of **any-length discrete diffusion** and **adaptive compression for time-series LLMs**, pushing the boundaries of generative sequence modeling.
+Today's submissions reveal a strong pivot toward **robustness and generalization in dynamic, real-world conditions** rather than static benchmarks. A major theme is the evolution of **LLM agents from tool-users to orchestrators**, with new frameworks for scientific discovery, multi-agent coordination, and compositional reasoning. Significant progress is also visible in formalizing **reasoning failures and recoverability**, with papers applying category theory (operads) to detect compositional errors and geometric frameworks to understand continual learning. Finally, there is a growing emphasis on **verifiable evaluation**, with new benchmarks for agent assessment, epigenomics, and reproducibility that prioritize determinism and scalability.
 
 ### 2. Key Papers
 
-#### 🧠 Large Language Models
-- **Understanding Truncated Positional Encodings for Graph Neural Networks** ([link](http://arxiv.org/abs/2606.13671v1))
-  *James Flora, Mitchell Black, Weng-Keen Wong et al.*
-  Proves theoretical equivalence between spectral and walk-based positional encodings in GNNs, with practical guidance on truncation strategies.
+#### 🧠 Large Language Models (Architecture, Training, Alignment, Evaluation)
 
-- **Influcoder: Distilling Decoders' Gradient Influence Rankings into an Encoder for Data Attribution** ([link](http://arxiv.org/abs/2606.13668v1))
-  *Dimitri Kachler, Damien Sileo, Pascal Denis*
-  Distills expensive gradient-based data attribution from decoder LLMs into a fast encoder for efficient training data curation.
+- **Understanding Truncated Positional Encodings for Graph Neural Networks**
+  [http://arxiv.org/abs/2606.13671v1](http://arxiv.org/abs/2606.13671v1)
+  Flora et al.
+  Provides a unified theoretical analysis showing that spectral and walk-based positional encodings are equivalent in expressive power, establishing the exact limits of truncated encodings for GNNs.
 
-- **Operadic consistency: a label-free signal for compositional reasoning failures in LLMs** ([link](http://arxiv.org/abs/2606.13649v1))
-  *Nathaniel Bottman, Yinhong Liu, Kyle Richardson*
-  Introduces operadic consistency, a mathematical label-free metric for detecting LLM reasoning failures at inference time.
+- **Automated reproducibility assessments in the social and behavioral sciences using large language models**
+  [http://arxiv.org/abs/2606.13670v1](http://arxiv.org/abs/2606.13670v1)
+  Holtdirk et al.
+  Demonstrates that LLMs can automate reproducibility checks by reanalyzing original data and code, offering a scalable solution to the replication crisis.
 
-- **SkMTEB: Slovak Massive Text Embedding Benchmark and Model Adaptation** ([link](http://arxiv.org/abs/2606.13647v1))
-  *Marek Šuppa, Andrej Ridzik, Daniel Hládek et al.*
-  Provides the first comprehensive MTEB-style text embedding benchmark for Slovak, covering 31 datasets across 7 task types.
+- **Beyond Uniform Tokens: Adaptive Compression for Time Series Language Models**
+  [http://arxiv.org/abs/2606.13624v1](http://arxiv.org/abs/2606.13624v1)
+  Gan et al.
+  Introduces an adaptive compression mechanism for time-series tokens, resolving the information-structure mismatch between numerical observations and text prompts in LLMs.
 
-#### 🤖 Agents & Reasoning
-- **EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments** ([link](http://arxiv.org/abs/2606.13681v1))
-  *Jundong Xu, Qingchuan Li, Jiaying Wu et al.*
-  Proposes a framework for tracking and evolving agent memory to maintain performance in non-stationary real-world environments.
+- **Influcoder: Distilling Decoders' Gradient Influence Rankings into an Encoder for Data Attribution**
+  [http://arxiv.org/abs/2606.13668v1](http://arxiv.org/abs/2606.13668v1)
+  Kachler et al.
+  Proposes a method to distill expensive gradient-based data attribution scores into a lightweight encoder, enabling efficient training data filtering for LLMs.
 
-- **Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning** ([link](http://arxiv.org/abs/2606.13680v1))
-  *Zilin Xiao, Qi Ma, Chun-cheng Jason Chen et al.*
-  Combines RAG with reinforcement learning to retrieve structurally analogous problems rather than semantically similar ones, improving complex reasoning.
+#### 🤖 Agents & Reasoning (Planning, Tool Use, Multi-Agent, Chain-of-Thought)
 
-- **Agents-K1: Towards Agent-native Knowledge Orchestration** ([link](http://arxiv.org/abs/2606.13669v1))
-  *Zongsheng Cao, Bihao Zhan, Jinxin Shi et al.*
-  Moves beyond flat citation graphs to orchestrate key entities, claims, and evidence in scientific knowledge for research agents.
+- **EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments**
+  [http://arxiv.org/abs/2606.13681v1](http://arxiv.org/abs/2606.13681v1)
+  Xu et al.
+  Introduces a benchmark and framework for evaluating and improving LLM agents' ability to continuously adapt their knowledge and behavior in changing environments, moving beyond static evaluations.
 
-- **Recursive Agent Harnesses** ([link](http://arxiv.org/abs/2606.13643v1))
-  *Elias Lumer, Sahil Sen, Kevin Paul et al.*
-  Formalizes the pattern of agents spawning recursive sub-agents for long-context reasoning, bridging the gap between recursive LMs and production coding agents.
+- **Learning to Reason by Analogy via Retrieval-Augmented Reinforcement Fine-Tuning**
+  [http://arxiv.org/abs/2606.13680v1](http://arxiv.org/abs/2606.13680v1)
+  Xiao et al.
+  Proposes a retrieval method that finds analogous problems (rather than semantically similar ones) and uses RL fine-tuning to teach LLMs to reason by analogy, outperforming standard RAG on complex tasks.
 
-- **Multiagent Protocols with Aggregated Confidence Signals** ([link](http://arxiv.org/abs/2606.13591v1))
-  *Ali Elahi, Barbara Di Eugenio*
-  Proposes the first method for producing and evaluating confidence for multi-agent system outputs, enabling better oversight and trust.
+- **HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents**
+  [http://arxiv.org/abs/2606.13663v1](http://arxiv.org/abs/2606.13663v1)
+  Du et al.
+  Solves the "execution-granularity mismatch" by allowing agents to bundle deterministic tool workflows into a single high-level action, reducing noise and improving planning efficiency.
 
-- **Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models** ([link](http://arxiv.org/abs/2606.13603v1))
-  *Daniel Scalena, Sara Candussio, Luca Bortolussi et al.*
-  Uses early-exit causal probing to estimate when a model "commits" to its final answer during CoT, revealing many reasoning steps are epiphenomenal.
+- **EurekAgent: Agent Environment Engineering is All You Need For Autonomous Scientific Discovery**
+  [http://arxiv.org/abs/2606.13662v1](http://arxiv.org/abs/2606.13662v1)
+  Xin et al.
+  Argues that the key to autonomous science is designing the agent's execution environment—not just the agent—and provides a framework for building such environments for hypothesis iteration.
 
-#### 🔧 Methods & Frameworks
-- **HyperTool: Beyond Step-Wise Tool Calls for Tool-Augmented Agents** ([link](http://arxiv.org/abs/2606.13663v1))
-  *Yaxin Du, Yifan Zhou, Yujie Ge et al.*
-  Solves the execution-granularity mismatch in tool-augmented agents by batching deterministic tool workflows into hyper-calls.
+- **Multi-Agent Reinforcement Learning from Delayed Marketplace Feedback for Objective-Weight Adaptation in Three-Sided Dispatch**
+  [http://arxiv.org/abs/2606.13604v1](http://arxiv.org/abs/2606.13604v1)
+  Wu et al.
+  Presents a deployed RL system at DoorDash that dynamically adjusts objective weights for courier dispatch using delayed marketplace feedback, demonstrating real-world viability.
 
-- **A2D2: Fine-Tuning Any-Length Discrete Diffusion for Adaptive Decoding** ([link](http://arxiv.org/abs/2606.13565v1))
-  *Sophia Tang, Yuchen Zhu, Molei Tao et al.*
-  Introduces the first principled reward-guided fine-tuning framework for any-length discrete diffusion models via token insertion.
+- **Reasoning as Pattern Matching: Shared Mechanisms in Human and LLM Everyday Reasoning**
+  [http://arxiv.org/abs/2606.13607v1](http://arxiv.org/abs/2606.13607v1)
+  Studdiford & Lupyan
+  Challenges the notion that LLM failures prove they don't "reason," showing that human reasoning exhibits similar pattern-matching failures, suggesting shared cognitive mechanisms.
 
-- **Beyond Uniform Tokens: Adaptive Compression for Time Series Language Models** ([link](http://arxiv.org/abs/2606.13624v1))
-  *Jialin Gan, Xin Qiu, Guangzhe Chen et al.*
-  Addresses the information structure mismatch between TS tokens and text tokens with adaptive compression for time-series LLMs.
+#### 🔧 Methods & Frameworks (New Techniques, Benchmarks, Efficiency Improvements)
 
-- **Simplex-Constrained Sparse Bagging: Transitioning from Uniform Priors to Sparse Posteriors in Ensemble Learning** ([link](http://arxiv.org/abs/2606.13589v1))
-  *Meher Sai Preetam, Meher Bhaskar*
-  Provides a mathematically rigorous framework for post-training compression of bagging ensembles via simplex-constrained sparsity.
+- **Multiagent Protocols with Aggregated Confidence Signals**
+  [http://arxiv.org/abs/2606.13591v1](http://arxiv.org/abs/2606.13591v1)
+  Elahi & Di Eugenio
+  Proposes the first method for producing a calibrated confidence score for the output of a multiagent system, enabling better oversight and downstream decision-making.
 
-#### 📊 Applications
-- **EpiBench: Verifiable Evaluation of AI Agents on Epigenomics Analysis** ([link](http://arxiv.org/abs/2606.13602v1))
-  *Harihara Muralidharan, Reema Baskar, Soo Hee Lee et al.*
-  A verifiable benchmark for AI agents performing short-horizon epigenomics analysis, with 106 evaluable workflow decisions.
+- **Operadic consistency: a label-free signal for compositional reasoning failures in LLMs**
+  [http://arxiv.org/abs/2606.13649v1](http://arxiv.org/abs/2606.13649v1)
+  Bottman et al.
+  Uses operad theory to create a label-free signal that detects compositional reasoning failures at inference time, providing a new baseline for confidence estimation.
 
-- **LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories** ([link](http://arxiv.org/abs/2606.13578v1))
-  *Baochang Ren, Xinjie Liu, Xi Chen et al.*
-  Brings physical laboratory manipulation into the VLA paradigm, enabling AI to execute benchtop protocols beyond just reading literature.
+- **Valid Inference with Synthetic Data via Task Exchangeability**
+  [http://arxiv.org/abs/2606.13629v1](http://arxiv.org/abs/2606.13629v1)
+  Tan & Zrnic
+  Provides a theoretical framework grounded in exchangeability that guarantees the validity of statistical inference when using synthetic data (e.g., LLM-generated "silicon samples").
 
-- **ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages** ([link](http://arxiv.org/abs/2606.13572v1))
-  *Tanmoy Kanti Halder, Akash Ghosh, Subhadip Baidya et al.*
-  Addresses multilingual and low-resource healthcare AI with a multi-agent multimodal framework tailored for rural India.
+- **NetCause: Counterfactual Learning for Root Cause Analysis in Large-Scale Networks**
+  [http://arxiv.org/abs/2606.13543v1](http://arxiv.org/abs/2606.13543v1)
+  Chraim et al.
+  Applies counterfactual learning to learn how faults propagate through networks, enabling causal attribution of customer impact to root causes beyond static rules or correlation.
+
+#### 📊 Applications (Domain-Specific, Multimodal, Code Generation)
+
+- **LabVLA: Grounding Vision-Language-Action Models in Scientific Laboratories**
+  [http://arxiv.org/abs/2606.13578v1](http://arxiv.org/abs/2606.13578v1)
+  Ren et al.
+  Extends VLA models to the scientific domain, enabling robots to physically execute lab protocols (e.g., pipetting, measuring) from natural language instructions.
+
+- **ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages**
+  [http://arxiv.org/abs/2606.13572v1](http://arxiv.org/abs/2606.13572v1)
+  Halder et al.
+  A multi-agent system for multimodal medical diagnosis that works in low-resource Indic languages, addressing a critical gap in rural healthcare access.
+
+- **Generative Modeling of Bach-Style Symbolic Music: A Comparative Study of Autoregressive, Latent-Variable, and Adversarial Approaches**
+  [http://arxiv.org/abs/2606.13626v1](http://arxiv.org/abs/2606.13626v1)
+  Lee et al.
+  A rigorous comparative study of three major generative model families on a shared symbolic music corpus, providing clear insights into which architectures best capture musical structure.
 
 ### 3. Research Trend Signal
 
-Two meta-trends stand out. First, a **mathematical turn in LLM reasoning analysis**: papers on operad theory for compositional reasoning, stable recovery manifolds for continual learning, and the cup-product neural layer all apply formal algebraic/geometric structures to understand what models actually do. This suggests the field is moving from "just scale up" toward rigorous theoretical foundations for reasoning failures and recoverability. Second, **agent evaluation is becoming a hard science**: benchmarks like EpiBench and AgentBeats emphasize verifiable, deterministic grading and reproducibility, moving away from subjective or LLM-as-judge evaluations. Combined with the rise of domain-specific agent frameworks (epigenomics, lab robotics, marketplace dispatch), this signals that agent research is maturing from proof-of-concept to deployable, auditable systems.
+A clear signal from today's papers is the **formalization of agent behavior through mathematical structures**. The use of **operad theory** (two papers: 13634, 13649) to model and detect failures in compositional reasoning represents a shift from purely empirical methods to theory-grounded diagnostics. Coupled with frameworks like **Simplex-Constrained Sparse Bagging** (13589) for rigorous ensemble calibration and **Task Exchangeability** (13629) for inference validation, the field is moving toward more principled, provable guarantees. This contrasts with, but complements, the highly practical focus on **deployment-ready systems** (HyperTool, EurekAgent, DoorDash dispatch), suggesting a maturation where theory and practice are converging.
 
 ### 4. Worth Deep Reading
 
-1. **Operadic consistency: a label-free signal for compositional reasoning failures in LLMs** ([link](http://arxiv.org/abs/2606.13649v1)) — This paper offers a genuinely new mathematical tool for diagnosing why LLMs fail at composition, with potential to replace ad-hoc confidence metrics with principled algebraic signatures.
+1.  **Operadic consistency: a label-free signal for compositional reasoning failures in LLMs** ([2606.13649v1](http://arxiv.org/abs/2606.13649v1)) — This paper is significant for offering a mathematically rigorous, label-free method for detecting reasoning errors at inference time. It moves beyond heuristic confidence scores and provides a path toward more reliable and interpretable LLMs.
 
-2. **Recursive Agent Harnesses** ([link](http://arxiv.org/abs/2606.13643v1)) — Formalizes a pattern already emerging in production systems (Anthropic's dynamic workflows). Understanding the theoretical basis for recursive sub-agent spawning is crucial for designing safe, scalable agent architectures.
+2.  **EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments** ([2606.13681v1](http://arxiv.org/abs/2606.13681v1)) — As agents are deployed in the real world, the ability to handle non-stationary environments is paramount. This paper defines the problem and provides a benchmark, making it a foundational read for anyone working on long-lived, robust agents.
 
-3. **Beyond the Commitment Boundary: Probing Epiphenomenal Chain-of-Thought in Large Reasoning Models** ([link](http://arxiv.org/abs/2606.13603v1)) — Directly challenges the dominant narrative that all CoT steps are causally necessary. The early-exit causal probing methodology is elegant and the findings have practical implications for inference-time scaling strategies.
+3.  **Valid Inference with Synthetic Data via Task Exchangeability** ([2606.13629v1](http://arxiv.org/abs/2606.13629v1)) — Given the explosion in using LLMs to generate "synthetic data" for research, this paper's theoretical guarantee for statistical validity is critical. It provides the necessary rigor that is often missing in current practices.
 
 ---
-*This digest is auto-generated by [agents-radar](https://github.com/duanyytop/agents-radar).*
+*This digest is auto-generated by [agents-radar](https://github.com/Jatway/agents-radar).*

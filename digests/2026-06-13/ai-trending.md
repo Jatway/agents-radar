@@ -1,91 +1,132 @@
 # AI 开源趋势日报 2026-06-13
 
-> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-06-13 00:32 UTC
+> 数据来源: GitHub Trending + GitHub Search API | 生成时间: 2026-06-13 07:10 UTC
 
 ---
 
-好的，作为一名专注于 AI 开源生态的技术分析师，我将为您呈上基于 2026-06-13 数据的《AI 开源趋势日报》。
+好的，作为专注于 AI 开源生态的技术分析师，我对您提供的 2026-06-13 数据进行了筛选、分类和趋势分析，现呈上报告。
 
 ---
 
-## AI 开源趋势日报 (2026-06-13)
+### **AI 开源趋势日报 (2026-06-13)**
 
-### 1. 今日速览
+#### **1. 今日速览**
 
-今日 AI 开源生态的核心主题是 **“Agent 技能与生产环境落地”**。Trending 榜单中，多个专注于为 AI 编码代理（Coding Agent）提供“技能”和“方法论”的项目（如 `agent-skills`、`pm-skills`）异军突起，获得了海量关注，这标志着社区正从构建 Agent 框架转向打磨 Agent 的实用性和专业性。同时，AI 基础设施层竞争白热化，苹果推出的容器工具 `container` 和专门优化 LLM 推理 KV 缓存的 `LMCache` 都获得了极高的热度，凸显了性能优化和工具链的重要性。在医疗、知识管理等领域，`openmed` 等垂直应用也展示了 AI 落地的多元化路径。
+今日 AI 开源领域最显著的动向是 **“AI 智能体技能”生态的集中爆发**。Trending 榜上出现了多个旨在为 AI Coding Agent（如 Claude Code）提供标准化、可复用技能包的项目，如 `agent-skills` 和 `superpowers`，这标志着开发者社区正在集体探索将 Agent 从“通用问答工具”转化为“可配置的生产力引擎”。同时，**“开源医疗 AI”** 和 **“KV Cache 优化”** 等垂直领域与底层效率项目也获得了大量关注，显示出 AI 开源社区正从“大而全”转向“专而精”和“深而硬”。
 
-### 2. 各维度热门项目
-
-#### 🔧 AI 基础工具 (框架、SDK、推理引擎、开发工具、CLI)
-
-- **[apple/container](https://github.com/apple/container)** [Swift] ⭐0 (+3504 today)
-    - **说明**：苹果发布的高性能 Linux 容器管理工具。它为在 Mac 上运行 AI 工作负载、测试和部署提供了轻量级、原生 Swift 编写的解决方案，标志着大厂对 AI 基础设施的持续投入。
-
-- **[LMCache/LMCache](https://github.com/LMCache/LMCache)** [Python] ⭐0 (+28 today)
-    - **说明**：旨在加速 LLM 推理的 KV 缓存层。通过优化 KV 缓存的存取速度，它能显著降低大模型推理延迟，是解决长上下文和高并发场景性能瓶颈的关键技术，对规模化部署 LLM 应用至关重要。
-
-- **[llm-jp/awesome-japanese-llm](https://github.com/llm-jp/awesome-japanese-llm)** [TypeScript] ⭐1,409
-    - **说明**：日本 LLM 资源汇总。作为一个不断更新的精选列表，它为多语言 LLM 生态的发展提供了重要参考。
-
-- **[skyzh/tiny-llm](https://github.com/skyzh/tiny-llm)** [Python] ⭐4,272
-    - **说明**：面向系统工程师的 LLM 推理 Serving 学习课程。该项目通过从零构建一个微缩版的 vLLM，帮助开发者深入理解 LLM 的底层运行原理，是连接学术与工程实践的优秀教材。
-
-#### 🤖 AI 智能体/工作流 (Agent 框架、自动化、多智能体)
-
-- **[addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)** [Shell] ⭐0 (+2656 today)
-    - **说明**：AI 编码代理的生产级工程技能集合。今天最受瞩目的项目之一。它不是又一个 Agent 框架，而是为 Claude Code 等工具注入专业能力的“技能包”，代表了 Agent 从“玩具”走向“生产力工具”的关键一步。
-
-- **[obra/superpowers](https://github.com/obra/superpowers)** [Shell] ⭐0 (+1275 today)
-    - **说明**：Agentic 技能框架与软件开发方法论。与 `agent-skills` 类似，它强调的是如何通过一套系统的方法和框架来组织和复用 Agent 的技能，从而提升软件开发的整体效率和质量。
-
-- **[phuryn/pm-skills](https://github.com/phuryn/pm-skills)** ⭐0 (+827 today)
-    - **说明**：面向产品经理的能力市场。它展示了 Agent 技能概念从开发侧向产品、运营等更多角色渗透的趋势，预示着未来 Agent 将成为跨职能团队的通用生产力工具。
-
-- **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)** [Shell] ⭐0 (+1026 today)
-    - **说明**：一站式智能体团队。该项目将多个拥有特定技能的 AI Agent（如前端开发、社区运营、内容注入等）组合成一个完整的“代理机构”，是探索多智能体协作与分工的典型实践。
-
-#### 📦 AI 应用 (具体应用产品、垂直场景解决方案)
-
-- **[maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed)** [Python] ⭐0 (+515 today)
-    - **说明**：开源医疗 AI。该项目专注于将 AI 应用于医疗保健场景，展示了 AI 在解决垂直行业具体痛点问题（如诊断辅助、药物发现、患者管理）上的巨大潜力。
-
-- **[PaddlePaddle/PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)** [Python] ⭐82,018
-    - **说明**：强大的 OCR 工具。它将 CV 与 LLM 能力结合，能将任何图片或 PDF 文档转化为 LLM 可识别的结构化数据，是打通物理世界（文档）与数字世界（AI）的关键桥梁。
-
-#### 🧠 大模型/训练 (模型权重、训练框架、微调工具)
-
-- **[open-compass/opencompass](https://github.com/open-compass/opencompass)** [Python] ⭐7,081
-    - **说明**：全面的 LLM 评测平台。随着新模型不断涌现，客观、标准化的评测变得至关重要。该平台支持对 100+ 主流模型在超过 100 个数据集上进行评测，是社区评估模型能力的“裁判”。
-
-- **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)** [Python] ⭐72,117
-    - **说明**：统一的 LLM 高效微调框架。作为久经考验的项目，它通过简洁的接口和丰富的优化器支持，极大地降低了开发者微调大型模型的门槛，是个人和企业进行模型定制化的事实标准工具之一。
-
-#### 🔍 RAG/知识库 (向量数据库、检索增强、知识管理)
-
-- **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** [Python] ⭐82,576
-    - **说明**：领先的开源 RAG 引擎。它将 RAG 与 Agent 能力深度融合，构建了强大的 LLM 上下文层，是该领域的标杆项目之一，持续受到社区高度关注。
-
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)** [Python] ⭐58,453
-    - **说明**：AI 智能体的通用记忆层。该项目试图解决 Agent 的长期记忆问题，通过为 Agent 提供一个持续、可检索的知识库，使其能够记住过去交互、持续学习和改进，是打造“有记忆”的 Agent 的核心组件。
-
-- **[pathwaycom/llm-app](https://github.com/pathwaycom/llm-app)** [Jupyter Notebook] ⭐59,335
-    - **说明**：实时数据 RAG 模板。它提供了与多种实时数据源（如 Kafka、数据库、API）同步的 RAG 模板，使得 AI 应用能够基于最新的、动态变化的数据进行问答和分析，对于金融、电商等实时性要求高的场景价值巨大。
-
-### 3. 趋势信号分析
-
-今日开源社区最强烈的信号是 **“Agent 技能化”** 的爆发。`agent-skills`、`pm-skills` 等项目以数十倍于其他工具的日增 Star 登榜，表明社区关注的焦点已从“如何构建 Agent 框架”转向“如何让 Agent 真正在工作场景中发挥价值”。人们不再满足于通用的 Agent 能力，而是渴望针对不同岗位（开发、产品、设计）和任务的专业技能包。
-
-另一大趋势是 **AI 基础设施层**的激烈竞争。苹果的 `container` 和 `LMCache` 的同时登榜，分别从虚拟化和内存优化两个核心维度，展示了巨头和初创公司为提升 AI 工作负载性能和便利性所做的努力。这反映了随着 AI 应用向生产环境深入，对底层基础设施的性能、成本和易用性提出了更高要求。这些项目与社区对 `vllm`、`ollama` 等项目的长期关注一脉相承。
-
-近期行业大事件（如新的大模型发布、Agent 概念的火热）为这些项目提供了生长的土壤。社区不再仅仅满足于“跑通”某个模型或 Agent demo，而是开始讨论如何“用好”、“规模化”和“专业化”它们。
-
-### 4. 社区关注热点
-
-- **[agent-skills 及其衍生生态](https://github.com/addyosmani/agent-skills)**：强烈推荐。该项目定义了一种全新的开源模式——技能的市场与复用。关注它不仅能学习到最佳的 Agent 工程实践，还可能启发你在自己的项目或岗位上创建并贡献特定技能，成为社区的重要一环。
-- **[LMCache](https://github.com/LMCache/LMCache)**：若你从事 LLM 应用推理优化或提供 API 服务，这是必盯项目。其“最快速 KV 缓存层”的定位直击当前 LLM 推理的成本和延迟痛点。
-- **[apple/container](https://github.com/apple/container)**：如果你是一名 macOS 架构师或开发者，尤其是需要在本机进行 AI 模型训练或测试的团队，这是苹果官方的“重磅炸弹”。它可能深刻改变在 Mac 上进行 AI 开发的工作流程。
-- **[ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis)**：对于金融科技领域的开发者，这是 LLM 在垂直场景（量化投资）落地的优秀范例。它集成了数据获取、LLM 分析、可视化展示和自动化推送，架构清晰，有很高的参考价值。
-- **[mem0ai/mem0](https://github.com/mem0ai/mem0)**：任何致力于打造高级、可持续交互的 AI 应用的开发者都应关注。记忆是下一代 Agent 的核心能力，而 `mem0` 正在成为这一领域的标准层。
+#### **2. 各维度热门项目**
 
 ---
-*本日报由 [agents-radar](https://github.com/duanyytop/agents-radar) 自动生成。*
+
+##### 🔧 **AI 基础工具（框架、SDK、推理引擎、开发工具、CLI）**
+
+*   **[LMCache/LMCache](https://github.com/LMCache/LMCache)**
+    *   ⭐增长：+28（今日） | 总量：未提供
+    *   **一句话说明**：如题所述，它是 LLM 的“超级加速层”，通过缓存 KV Cache 来显著提升推理速度。在 LLM 长上下文推理场景愈发普遍的今天，这类底层优化工具正变得至关重要。
+
+*   **[googleworkspace/cli](https://github.com/googleworkspace/cli)**
+    *   ⭐总量：27,027
+    *   **一句话说明**：一个统一的命令行工具，用于操作 Google Workspace 全家桶。其中明确包含 “AI agent skills”，这标志着基础设施工具正在为 AI Agent 原生地提供 API 接口，是 Agent 生态成熟化的重要信号。
+
+*   **[meilisearch/meilisearch](https://github.com/meilisearch/meilisearch)**
+    *   ⭐总量：58,074
+    *   **一句话说明**：极快的搜索引擎，已集成 AI 驱动的混合搜索能力。它为开发者提供了为应用快速搭建智能搜索体验的开箱即用方案。
+
+---
+
+##### 🤖 **AI 智能体/工作流（Agent 框架、自动化、多智能体）**
+
+*   **[Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT)**
+    *   ⭐总量：184,922
+    *   **一句话说明**：Agent 领域的元老级项目，持续迭代。它依然是社区探索通用 AI Agent 愿景的旗舰参考实现，其理念不断被后续项目借鉴。
+
+*   **[langgenius/dify](https://github.com/langgenius/dify)**
+    *   ⭐总量：145,026
+    *   **一句话说明**：定位为“生产级 Agentic 工作流开发平台”。它从 LLMOps 平台转型而来，现在更强调构建复杂的、可编排的 Agent 工作流，目标是降低 AI 应用从原型到生产的门槛。
+
+*   **[OpenHands/OpenHands](https://github.com/OpenHands/OpenHands)**
+    *   ⭐总量：76,711
+    *   **一句话说明**：口号是“AI 驱动的软件开发”。它不仅仅是一个代码助手，而是一个能够自主执行开发任务（如写代码、跑测试、Git 操作）的 Agent。它代表了 Agent在复杂工程任务中的实践前沿。
+
+*   **[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents)**
+    *   ⭐增长：+1026（今日） | 总量：未提供
+    *   **一句话说明**：提供了一个“完整的 AI 代理机构”概念，包含从前端到后端的多种专业 Agent角色。它展示了“多智能体协作”从理论走向实践的具体形态，极具启发性。
+
+*   **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)**
+    *   ⭐总量：66,335
+    *   **一句话说明**：一个“微型” Claude Code 实现教程。它从零开始构建一个 Agent 的“核心驱动”，非常适合开发者深入理解 Agent 的工作原理和架构设计，是学习型项目的典范。
+
+*   **[phuryn/pm-skills](https://github.com/phuryn/pm-skills)**
+    *   ⭐增长：+827（今日） | 总量：未提供
+    *   **一句话说明**：主打“项目管理”技能的 Agent 技能包，涵盖从发现到增长的全流程。这表明 Agent 的能力正从代码开发拓展到更广泛的商业和管理领域。
+
+---
+
+##### 📦 **AI 应用（具体应用产品、垂直场景解决方案）**
+
+*   **[maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed)**
+    *   ⭐增长：+515（今日） | 总量：未提供
+    *   **一句话说明**：定位为“开源医疗 AI”。今天它冲上 Trending，暗示着社区对垂直领域的开源AI 产品需求强烈。医疗是公认的 AI 高价值场景，其开源化有助于加速研究和落地。
+
+*   **[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio)**
+    *   ⭐总量：47,254
+    *   **一句话说明**：一个集成了智能聊天、自主 Agent 和数百个助手的“AI 生产力工作室”。它代表了一类“All-in-One”的桌面 AI 客户端，致力于统一管理多模型和 Agent 任务，提升个人用户的工作效率。
+
+*   **[OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB)**
+    *   ⭐总量：69,036
+    *   **一句话说明**：金融数据分析平台，明确服务于分析师和 AI Agent。这标志着 AI Agent 正在进入专业领域，金融作为数据密集型行业，是 Agent 能力落地的天然试验场。
+
+---
+
+##### 🧠 **大模型/训练（模型权重、训练框架、微调工具）**
+
+*   **[hiyouga/LlamaFactory](https://github.com/hiyouga/LlamaFactory)**
+    *   ⭐总量：72,126
+    *   **一句话说明**：支持 100+ 模型的高效微调框架（已被ACL 2024接收）。它极大地降低了 LLM 微调的门槛和成本，是社区中最受欢迎的微调工具之一，今天依然保持着高热度。
+
+*   **[ollama/ollama](https://github.com/ollama/ollama)**
+    *   ⭐总量：173,998
+    *   **一句话说明**：让本地运行大模型变得像使用 Docker 一样简单。它是本地 AI 普及的基石项目，其热度不减，反映了开发者对本地部署和隐私保护的持续关注。
+
+*   **[NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)**
+    *   ⭐总量：192,179
+    *   **一句话说明**：一个开源的 Agent 框架，强调其可成长性。它紧密关联 NousResearch 的模型生态，体现了模型研发方从“只提供模型”转向“提供模型+Agent”的完整解决方案思路。
+
+---
+
+##### 🔍 **RAG/知识库（向量数据库、检索增强、知识管理）**
+
+*   **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)**
+    *   ⭐总量：82,600
+    *   **一句话说明**：顶级的开源 RAG 引擎，融合了 RAG 和 Agent 能力，为 LLM 提供优质上下文层。它是 RAG 领域的标杆项目，持续在用户体验和深度功能上进行创新。
+
+*   **[run-llama/llama_index](https://github.com/run-llama/llama_index)**
+    *   ⭐总量：50,100
+    *   **一句话说明**：定位为“领先的文档 Agent 和 OCR 平台”。Llamaindex 正在从单纯的索引工具向更具主动性的“文档 Agent”演进，使其能从文档中提取信息并执行操作。
+
+*   **[NirDiamant/RAG_Techniques](https://github.com/NirDiamant/RAG_Techniques)**
+    *   ⭐总量：27,907
+    *   **一句话说明**：一本关于 RAG 高级技术的“百科全书”，每项技术都配有详细的 Notebook教程。它是任何希望深入优化 RAG 系统的开发者必看的资源库。
+
+*   **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)**
+    *   ⭐总量：82,042
+    *   **一句话说明**：为 Agent（如 Claude Code, Codex）提供跨会话的持久化上下文。这意味着 Agent 可以“记住”用户，极大地增强了 Agent 的连续性和个性化，是 Agent 智能升级的关键组件。
+
+#### **3. 趋势信号分析**
+
+今日数据释放出两个强烈的趋势信号：
+
+**一、“Agent Skills”范式正在形成。** `agent-skills`、`superpowers`、`pm-skills` 等项目的集体上榜，绝非偶然。它们代表社区不再满足于“一个通用 Agent 做所有事”，而是开始**用“技能”模块化和标准化 Agent 的能力**。这类似于早期编程语言从“面向过程”向“面向对象”的转变，预示着我们将看到更多可组合、可复用的“Agent 技能包”市场出现，极大降低构建复杂 Agent 的门槛。
+
+**二、AI 正从“工具”走向“产品”和“解决方案”。** `openmed` 和 `OpenBB` 等垂直应用项目的热度说明了社区对解决具体问题的渴望。同时，`mattermost` 这类传统协作平台也在积极拥抱 AI，说明 AI 能力正在深度嵌入企业级工作流。与此相呼应的是，像 `LMCache` 这样的底层优化工具也开始受到关注，这标志着**上层应用生态的繁荣正在倒逼底层基础设施创新**，以解决效率、成本和性能瓶颈。这与近期大型模型上下文窗口不断增长、Agent 应用尝试处理更复杂任务等行业事件紧密相关。
+
+#### **4. 社区关注热点**
+
+*   **🔥 `addyosmani/agent-skills` & `obra/superpowers`：** **“Agent 技能”运动的核心项目。** 它们定义了如何为 AI Coding Agent（如 Claude Code）编写、分享和复用技能。如果你正在使用或开发 Agent，关注此方向意味着你能跟上 Agent 能力扩展的最新标准。
+*   **🔥 `msitarzewski/agency-agents`：** **“多智能体协作”的玩具版典范。** 它展示了如何通过协作Agent完成复杂任务。虽然目前可能偏 demo，但它提供了一种极具启发性的未来工作模式蓝图。
+*   **🔥 `maziyarpanahi/openmed`：** **垂直领域开源 AI 的风向标。** 它的登榜说明，在激烈的基础模型竞争之外，**聚焦医疗、金融、法律等特定行业的开源 AI 产品，正成为开发者需求的下一个蓝海**。
+*   **🔥 `LMCache/LMCache`：** **LLM 推理加速的硬核方向。** 当大家都在关注模型能力时，关注推理效率同样重要。该项目专注于 KV Cache 优化，是解决 Agent 在实际应用中常见的长延迟问题的关键技术。
+*   **🔥 `shareAI-lab/learn-claude-code`：** **深挖 Agent 内部原理的最佳学习资源。** 如果你想从“使用 Agent”进阶到“理解甚至改造 Agent”，这个从零构建 Agent 驱动教程是不二之选。
+
+---
+*本日报由 [agents-radar](https://github.com/Jatway/agents-radar) 自动生成。*
